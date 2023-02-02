@@ -1,0 +1,257 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 13px 0px;
+  height: 844px;
+  border-radius: 30px;
+  background-color: #222222;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+.shadow {
+  box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
+}
+
+.app_title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 37px;
+  padding-right: 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: start;
+  color: #F4F4F4;
+}
+
+.app_title_icon {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.menu {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  position: absolute;
+  width: 210px;
+  background-color: #F4F4F4;
+  color: #222222;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  right: 55px;
+  top: 60px;
+  z-index: 2;
+}
+
+.add_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle_news_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MuiFormControlLabel-root {
+  margin: 0px !important;
+  justify-content: space-between;
+}
+
+.form {
+  z-index: 2;
+  position: fixed;
+  top: 13px;
+  width: 430px;
+  height: 870px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form_header {
+  color: #222222;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.form_body {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.form_button_block {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form_field {
+  margin-bottom: 15px;
+  width: 100%;  
+}
+
+.period_block {
+  padding: 0 20px 16px;
+}
+
+.period_block_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 17px 0px 20px 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 25px;
+}
+
+.period_block_tasks {
+  max-height: 273px;
+  border-radius: 40px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.period_block_tasks::-webkit-scrollbar {
+  display: none;
+}
+
+.future_day_tasks {
+  flex: 1;
+  min-height: 368px;
+  overflow-y: scroll;
+  padding: 16px 20px;
+  scrollbar-width: none;
+}
+
+.future_day_tasks::-webkit-scrollbar {
+  display: none;
+}
+
+.future_day_tasks_block {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  margin-bottom: 32px;
+  padding: 19px 15px;
+}
+
+.future_day_tasks_block_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #F4F4F4;
+}
+
+.future_day_tasks_block_title_text {
+  padding-left: 13px;
+  flex: 1;
+  text-align: start;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.task_data {
+  flex: 1;
+  padding-left: 14px;
+}
+
+.task_data_title {
+  text-align: start;
+  font-style: normal;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #F4F4F4;
+  width: 275px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task_data_description {
+  width: 200px;
+  text-align: start;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.day_block {
+  display: flex;
+  flex-direction: column;
+  padding: 11px 17px;
+}
+
+.task_color_block {
+  width: 5px;
+  height: 40px;
+  background: #FF0000;
+  border-radius: 3px;
+}
+
+.news_block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 20px 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 25px;
+}
+
+.news_block_content {
+  text-transform: uppercase;
+  padding-top: 15px;
+  scrollbar-width: none;
+}
+
+.news_block_content::-webkit-scrollbar {
+  display: none;
+}
